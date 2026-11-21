@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f7fb;
+    color: #333;
+}
+/* Header */
+header {
+    background: linear-gradient(135deg, #4e73df, #6f42c1);
+    color: white;
+    padding: 25px 50px;
+}
+header h1 { font-size: 30px; }
+header p { margin-top: 8px; }
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 15px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-right: 30px;
+    font-weight: bold;
+}
+nav a:hover { color: #4e73df; }
+/* Main container */
+.container { width: 90%; margin: 30px auto; }
+/* Welcome section */
+.welcome {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.welcome h2 { color: #4e73df; margin-bottom: 10px; }
+/* Dashboard cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.card h3 { color: #4e73df; font-size: 28px; }
+.card p { margin-top: 8px; }
+/* Sections */
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.section h2 { color: #4e73df; margin-bottom: 20px; }
+/* Tasks */
+.task {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f4f7fb;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.task input { margin-right: 10px; }
+/* Timetable */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+th { background-color: #4e73df; color: white; }
+/* Notes */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+/* Buttons */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4e73df;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover { background-color: #365bc7; }
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Responsive design */
+@media (max-width: 800px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    .cards { grid-template-columns: 1fr; }
+    header, nav { padding: 20px; }
+    nav a { display: block; margin-bottom: 10px; }
+}
